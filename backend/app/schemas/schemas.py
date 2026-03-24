@@ -1,0 +1,44 @@
+from pydantic import BaseModel
+from typing import Optional
+from app.models.models import QuestDifficulty, QuestType
+
+
+# ─── Quest ────────────────────────────────────────────────────────────────────
+
+class QuestOut(BaseModel):
+    id: str
+    title: str
+    description: str
+    difficulty: QuestDifficulty
+    xp_reward: int
+    type: QuestType
+
+    model_config = {"from_attributes": True}
+
+
+# ─── User ─────────────────────────────────────────────────────────────────────
+
+class UserOut(BaseModel):
+    id: str
+    xp: int
+    level: int
+    active_quest: Optional[QuestOut] = None
+
+    model_config = {"from_attributes": True}
+
+
+# ─── Auth ─────────────────────────────────────────────────────────────────────
+
+class TokenOut(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user: UserOut
+
+
+# ─── XP response (after completing a quest) ──────────────────────────────────
+
+class CompleteQuestOut(BaseModel):
+    xp_gained: int
+    new_xp: int
+    new_level: int
+    leveled_up: bool

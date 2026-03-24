@@ -1,12 +1,12 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Platform } from "react-native";
 import { UserData } from "../types";
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-// Point this at your FastAPI server.
-// Local dev: "http://192.168.x.x:8000"  (your machine's LAN IP, not localhost)
-// Production: "https://api.yourdomain.com"
+const DEV_URL = Platform.OS === "android" ? "http://10.0.2.2:8000" : "http://localhost:8000";
+const PROD_URL = "https://api.yourdomain.com";
 
-const BASE_URL = "http://192.168.1.100:8000"; // ← change this
+const BASE_URL = __DEV__ ? DEV_URL : PROD_URL;
 const TOKEN_KEY = "sidequest_token";
 
 // ─── Token storage ────────────────────────────────────────────────────────────
@@ -57,8 +57,8 @@ const apiFetch = async <T>(
  * Register as an anonymous user.
  * Stores the returned JWT locally — call once on first launch.
  */
-export const registerAnonymous = async (): Promise<UserData> => {
-  const data = await apiFetch<{ access_token: string; user: UserData }>(
+export const registerAnonymous = async (): Promise<any> => {
+  const data = await apiFetch<{ access_token: string; user: any }>(
     "/auth/anonymous",
     { method: "POST" }
   );
@@ -68,18 +68,18 @@ export const registerAnonymous = async (): Promise<UserData> => {
 
 // ─── User ─────────────────────────────────────────────────────────────────────
 
-export const fetchMe = async (): Promise<UserData> => {
-  return apiFetch<UserData>("/users/me");
+export const fetchMe = async (): Promise<any> => {
+  return apiFetch<any>("/users/me");
 };
 
 // ─── Quests ───────────────────────────────────────────────────────────────────
 
 /**
  * Get a random quest and assign it to the current user.
- * Returns updated UserData with active_quest populated.
+ * Returns updated UserData (raw) with active_quest populated.
  */
-export const acceptRandomQuest = async (): Promise<UserData> => {
-  return apiFetch<UserData>("/quests/random", { method: "POST" });
+export const acceptRandomQuest = async (): Promise<any> => {
+  return apiFetch<any>("/quests/random", { method: "POST" });
 };
 
 /**
@@ -99,4 +99,10 @@ export const completeQuest = async (): Promise<{
  */
 export const abandonQuest = async (): Promise<void> => {
   return apiFetch("/quests/abandon", { method: "DELETE" });
+};
+
+// ─── Social ───────────────────────────────────────────────────────────────────
+
+export const getLeaderboard = async (): Promise<any[]> => {
+  return apiFetch<any[]>("/users/leaderboard");
 };

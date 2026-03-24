@@ -18,8 +18,35 @@
  */
 
 import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeScreen } from "./src/screens/HomeScreen";
+import { ProfileScreen } from "./src/screens/ProfileScreen";
+import { LeaderboardScreen } from "./src/screens/LeaderboardScreen";
+import { theme } from "./src/styles/theme";
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
-  return <HomeScreen />;
+  return (
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={{
+          headerShown: false,
+          tabBarStyle: {
+            backgroundColor: theme.colors.surface,
+            borderTopColor: theme.colors.border,
+            paddingBottom: 5,
+            height: 60,
+          },
+          tabBarActiveTintColor: theme.colors.primary,
+          tabBarInactiveTintColor: theme.colors.textSecondary,
+        }}
+      >
+        <Tab.Screen name="Quests" component={HomeScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Rankings" component={LeaderboardScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 }

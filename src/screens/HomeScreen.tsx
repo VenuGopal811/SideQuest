@@ -18,7 +18,7 @@ import {
   Alert,
   ActivityIndicator,
 } from "react-native";
-import { usePlayer } from "../store/usePlayer";
+import { usePlayerContext } from "../store/PlayerContext";
 import { QuestCard } from "../components/QuestCard";
 import { XPBar } from "../components/XPBar";
 import { Button } from "../components/Button";
@@ -33,7 +33,7 @@ export const HomeScreen: React.FC = () => {
     acceptQuest,
     completeQuest,
     abandonQuest,
-  } = usePlayer();
+  } = usePlayerContext();
 
   const [questLoading, setQuestLoading] = useState(false);
   const [completeLoading, setCompleteLoading] = useState(false);

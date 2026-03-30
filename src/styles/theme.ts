@@ -53,3 +53,30 @@ export const Radius = {
   lg: 16,
   xl: 24,
 };
+
+export const theme = {
+  colors: {
+    background: Colors.bg,
+    surface: Colors.bgCard,
+    surfaceElevated: Colors.bgElevated,
+    text: Colors.textPrimary,
+    textSecondary: Colors.textSecondary,
+    textMuted: Colors.textMuted,
+    primary: Colors.accent,
+    accentGlow: Colors.accentGlow,
+    easy: Colors.easy,
+    medium: Colors.medium,
+    hard: Colors.hard,
+    fitness: Colors.fitness,
+    social: Colors.social,
+    skill: Colors.skill,
+    chaos: Colors.chaos,
+    border: Colors.border,
+    borderActive: Colors.borderActive,
+    success: Colors.success,
+    error: Colors.error,
+  },
+  fonts: Fonts,
+  spacing: Spacing,
+  roundness: Radius,
+};

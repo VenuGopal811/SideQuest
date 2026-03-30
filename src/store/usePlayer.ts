@@ -17,6 +17,7 @@ export const usePlayer = () => {
   const [userData, setUserData] = useState<UserData>({
     xp: 0,
     level: 0,
+    streak: 0,
     activeQuest: null,
   });
   const [loading, setLoading] = useState(true);
@@ -60,7 +61,7 @@ export const usePlayer = () => {
     if (!userData.activeQuest) return;
     try {
       const result = await apiCompleteQuest();
-      setUserData({ xp: result.new_xp, level: result.new_level, activeQuest: null });
+      setUserData((prev) => ({ ...prev, xp: result.new_xp, level: result.new_level, activeQuest: null }));
       return result.leveled_up;
     } catch (e: any) {
       setError(e.message ?? "Failed to complete quest.");
@@ -88,6 +89,7 @@ export const usePlayer = () => {
 const mapUser = (raw: any): UserData => ({
   xp: raw.xp,
   level: raw.level,
+  streak: raw.streak ?? 0,
   activeQuest: raw.active_quest
     ? {
         id: raw.active_quest.id,

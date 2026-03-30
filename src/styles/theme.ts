@@ -1,7 +1,7 @@
 // ─── SideQuest Theme ──────────────────────────────────────────────────────────
 // Dark mode, game-like feel. One place to change everything.
 
-const Colors = {
+export const Colors = {
   // Backgrounds
   bg: "#0a0a0f",
   bgCard: "#13131a",
@@ -34,11 +34,11 @@ const Colors = {
   error: "#f87171",
 };
 
-const Fonts = {
+export const Fonts = {
   mono: "Courier New", // fallback for game-like text
 };
 
-const Spacing = {
+export const Spacing = {
   xs: 4,
   sm: 8,
   md: 16,
@@ -47,7 +47,7 @@ const Spacing = {
   xxl: 48,
 };
 
-const Radius = {
+export const Radius = {
   sm: 8,
   md: 12,
   lg: 16,

@@ -1,10 +1,12 @@
+from datetime import datetime, timezone, timedelta
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.dependencies import get_current_user
-from app.models.models import User
-from app.schemas.schemas import QuestOut, UserOut, CompleteQuestOut
+from app.models.models import User, QuestCompletion
+from app.schemas.schemas import UserOut, CompleteQuestOut
 from app.services.quest_service import get_random_quest
 from app.services.xp_service import calculate_level
 
@@ -44,7 +46,7 @@ def complete_quest(
 ):
     """
     Mark the active quest as complete.
-    Awards XP, recalculates level, clears active quest.
+    Awards XP, recalculates level, records history, updates streak.
     """
     if not current_user.active_quest_id:
         raise HTTPException(
@@ -59,6 +61,31 @@ def complete_quest(
     new_xp = current_user.xp + xp_gained
     new_level = calculate_level(new_xp)
 
+    # ── Record completion history ──
+    completion = QuestCompletion(
+        user_id=current_user.id,
+        quest_id=quest.id,
+        xp_earned=xp_gained,
+    )
+    db.add(completion)
+
+    # ── Update streak ──
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if current_user.last_active_date:
+        last = datetime.strptime(current_user.last_active_date, "%Y-%m-%d").date()
+        today_date = datetime.now(timezone.utc).date()
+        diff = (today_date - last).days
+        if diff == 1:
+            current_user.streak += 1
+        elif diff > 1:
+            current_user.streak = 1
+        # diff == 0 means already active today, streak stays
+    else:
+        current_user.streak = 1
+
+    current_user.last_active_date = today
+
+    # ── Update XP / level ──
     current_user.xp = new_xp
     current_user.level = new_level
     current_user.active_quest_id = None

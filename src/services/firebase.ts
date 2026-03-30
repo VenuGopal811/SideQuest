@@ -1,21 +1,26 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// ─── Firebase Configuration ──────────────────────────────────────────────────
+// Firebase is NOT currently used.
+// Auth is handled entirely by the FastAPI backend (JWT tokens).
+//
+// If you need Firebase for analytics or push notifications later:
+// 1. Run: npm install firebase
+// 2. Uncomment the initializeApp block below
+// 3. Set environment variables (EXPO_PUBLIC_FIREBASE_*)
+//
+// See: https://docs.expo.dev/guides/environment-variables/
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyDLyf1CSfuMeEiVnh1gKpptbWXEIxRzGs4",
-    authDomain: "sidequest-dev-3f638.firebaseapp.com",
-    projectId: "sidequest-dev-3f638",
-    storageBucket: "sidequest-dev-3f638.firebasestorage.app",
-    messagingSenderId: "895669551546",
-    appId: "1:895669551546:web:2842fbaa824bc388a01d83",
-    measurementId: "G-SSBHCXJ5L0"
-};
+// import { initializeApp } from "firebase/app";
+//
+// const firebaseConfig = {
+//   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || "",
+//   authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || "",
+//   projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || "",
+//   storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || "",
+//   messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "",
+//   appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || "",
+// };
+//
+// const app = initializeApp(firebaseConfig);
+// export default app;
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export {};

@@ -1,9 +1,10 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Platform } from "react-native";
-import { UserData } from "../types";
+import { QuestCompletion } from "../types";
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const DEV_URL = Platform.OS === "android" ? "http://10.0.2.2:8000" : "http://localhost:8000";
+// Use your computer's LAN IP so physical devices can reach the backend.
+// Find it with: ipconfig (Windows) or ifconfig (Mac/Linux)
+const DEV_URL = "http://172.16.185.42:8000";
 const PROD_URL = "https://api.yourdomain.com";
 
 const BASE_URL = __DEV__ ? DEV_URL : PROD_URL;
@@ -105,4 +106,18 @@ export const abandonQuest = async (): Promise<void> => {
 
 export const getLeaderboard = async (): Promise<any[]> => {
   return apiFetch<any[]>("/users/leaderboard");
+};
+
+// ─── Quest History ────────────────────────────────────────────────────────────
+
+export const getQuestHistory = async (): Promise<QuestCompletion[]> => {
+  const raw = await apiFetch<any[]>("/users/me/history");
+  return raw.map((c) => ({
+    id: c.id,
+    questTitle: c.quest_title,
+    questType: c.quest_type,
+    questDifficulty: c.quest_difficulty,
+    xpEarned: c.xp_earned,
+    completedAt: c.completed_at,
+  }));
 };

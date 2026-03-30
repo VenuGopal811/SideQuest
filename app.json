@@ -10,7 +10,9 @@
     "splash": {
       "backgroundColor": "#0a0a0f"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.yourname.sidequest"
@@ -21,6 +23,9 @@
         "backgroundColor": "#0a0a0f"
       },
       "package": "com.yourname.sidequest"
-    }
+    },
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }

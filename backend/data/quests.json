@@ -1,0 +1,486 @@
+[
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000001",
+    "title": "Morning Stretch Routine",
+    "description": "Complete a 10-minute full-body stretching session to start your day.",
+    "category": "fitness",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000002",
+    "title": "Take the Stairs",
+    "description": "Avoid all elevators and escalators for the entire day — stairs only.",
+    "category": "fitness",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000003",
+    "title": "Hydration Check",
+    "description": "Drink at least 8 glasses of water today and log each one.",
+    "category": "fitness",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000004",
+    "title": "Walk 3,000 Steps",
+    "description": "Hit at least 3,000 steps before lunch. Track with your phone or watch.",
+    "category": "fitness",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000005",
+    "title": "Bodyweight Circuit",
+    "description": "Complete 3 rounds of 10 push-ups, 15 squats, and a 30-second plank.",
+    "category": "fitness",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000006",
+    "title": "Run a 5K",
+    "description": "Run or jog a full 5 kilometers without stopping. Pace doesn't matter.",
+    "category": "fitness",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000007",
+    "title": "Yoga Flow Session",
+    "description": "Follow along with a 30-minute yoga video from start to finish.",
+    "category": "fitness",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000008",
+    "title": "Bike to a New Spot",
+    "description": "Ride your bike to a place you've never visited before. Minimum 4 km round trip.",
+    "category": "fitness",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000009",
+    "title": "Cold Shower Challenge",
+    "description": "Take a full cold shower — no warm water allowed — for at least 3 minutes.",
+    "category": "fitness",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000010",
+    "title": "10K Steps Before Noon",
+    "description": "Hit 10,000 steps before 12:00 PM. Wake up early and get moving.",
+    "category": "fitness",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000011",
+    "title": "One-Hour Gym Session",
+    "description": "Spend a full 60 minutes at the gym doing a structured workout. No phone scrolling.",
+    "category": "fitness",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000012",
+    "title": "Sunset Hike",
+    "description": "Hike a trail of at least 5 km and reach the top in time to watch the sunset.",
+    "category": "fitness",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000001",
+    "title": "Compliment a Stranger",
+    "description": "Give a genuine, specific compliment to someone you don't know today.",
+    "category": "social",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000002",
+    "title": "Text an Old Friend",
+    "description": "Reach out to a friend you haven't spoken to in over a month. No memes — real words.",
+    "category": "social",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000003",
+    "title": "Hold the Door",
+    "description": "Consciously hold the door open for at least 3 people today and make eye contact.",
+    "category": "social",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000004",
+    "title": "Learn Someone's Name",
+    "description": "Introduce yourself to someone new — a neighbor, barista, or coworker you've never spoken to.",
+    "category": "social",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000005",
+    "title": "Phone-Free Dinner",
+    "description": "Have a full meal with someone without either person touching their phone.",
+    "category": "social",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000006",
+    "title": "Ask a Deep Question",
+    "description": "During a conversation, ask someone a meaningful question and truly listen to their answer.",
+    "category": "social",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000007",
+    "title": "Write a Thank-You Note",
+    "description": "Write a handwritten or heartfelt digital thank-you to someone who helped you recently.",
+    "category": "social",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000008",
+    "title": "Coffee with a Colleague",
+    "description": "Invite a coworker or classmate you rarely talk to for a casual coffee chat.",
+    "category": "social",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000009",
+    "title": "Organize a Group Outing",
+    "description": "Plan and execute a hangout for at least 4 people. You handle all the logistics.",
+    "category": "social",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000010",
+    "title": "Public Speaking Moment",
+    "description": "Speak up in a group setting — a meeting, class, or public event. Share an opinion or idea.",
+    "category": "social",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000011",
+    "title": "Volunteer for 2 Hours",
+    "description": "Spend at least 2 hours helping a local cause — food bank, cleanup, shelter, or tutoring.",
+    "category": "social",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "b2c3d4e5-0002-4000-8000-000000000012",
+    "title": "Reconnect Face-to-Face",
+    "description": "Meet up in person with someone you've only been texting. No screens during the visit.",
+    "category": "social",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000001",
+    "title": "Doodle for 10 Minutes",
+    "description": "Grab a pen and paper and doodle whatever comes to mind for at least 10 minutes.",
+    "category": "creative",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000002",
+    "title": "Photograph Something Beautiful",
+    "description": "Find one beautiful thing around you and take a thoughtful photo of it. No filters.",
+    "category": "creative",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000003",
+    "title": "Write a Haiku",
+    "description": "Write a haiku (5-7-5 syllables) about your current mood or surroundings.",
+    "category": "creative",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000004",
+    "title": "Curate a Playlist",
+    "description": "Create a themed playlist of at least 10 songs — give it a creative title.",
+    "category": "creative",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000005",
+    "title": "Sketch a Self-Portrait",
+    "description": "Draw a self-portrait using any medium — pencil, digital, or even crayon.",
+    "category": "creative",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000006",
+    "title": "Write a Short Story",
+    "description": "Write a complete short story of at least 300 words. Beginning, middle, and end.",
+    "category": "creative",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000007",
+    "title": "Learn a Song Intro",
+    "description": "Pick a song and learn to play or hum the first 30 seconds on any instrument or vocally.",
+    "category": "creative",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000008",
+    "title": "Redesign Your Space",
+    "description": "Rearrange a room, desk, or shelf to look and feel completely different.",
+    "category": "creative",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000009",
+    "title": "Make a Short Film",
+    "description": "Record and edit a short video (60–120 seconds) with a clear narrative or message.",
+    "category": "creative",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000010",
+    "title": "Cook a New Recipe",
+    "description": "Find a recipe you've never tried, buy the ingredients, and cook it from scratch.",
+    "category": "creative",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000011",
+    "title": "Build Something with Your Hands",
+    "description": "Construct something physical — origami, a shelf, a craft project — from raw materials.",
+    "category": "creative",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "c3d4e5f6-0003-4000-8000-000000000012",
+    "title": "Paint a Canvas",
+    "description": "Create a painting on canvas or large paper. Spend at least an hour on it.",
+    "category": "creative",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000001",
+    "title": "Tidy Your Desktop",
+    "description": "Organize your computer desktop — delete junk files, sort into folders, clean wallpaper.",
+    "category": "productivity",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000002",
+    "title": "Write Tomorrow's To-Do List",
+    "description": "Before bed, write down 3–5 actionable tasks for tomorrow. Be specific.",
+    "category": "productivity",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000003",
+    "title": "Unsubscribe Spree",
+    "description": "Unsubscribe from at least 10 email newsletters or notifications you never read.",
+    "category": "productivity",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000004",
+    "title": "Read for 15 Minutes",
+    "description": "Read a book, article, or paper for at least 15 uninterrupted minutes. No social media.",
+    "category": "productivity",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000005",
+    "title": "Pomodoro Power Hour",
+    "description": "Work in two 25-minute Pomodoro sprints with a 5-minute break in between.",
+    "category": "productivity",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000006",
+    "title": "Learn a New Keyboard Shortcut Set",
+    "description": "Find and practice 5 new keyboard shortcuts for a tool you use daily.",
+    "category": "productivity",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000007",
+    "title": "Journal for 20 Minutes",
+    "description": "Free-write in a journal for 20 minutes. Reflect on goals, feelings, or lessons learned.",
+    "category": "productivity",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000008",
+    "title": "Audit Your Screen Time",
+    "description": "Check your screen time report and identify your top 3 time-wasting apps. Set limits.",
+    "category": "productivity",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000009",
+    "title": "Deep Work Block",
+    "description": "Do 2 hours of uninterrupted deep work — phone on airplane mode, no notifications.",
+    "category": "productivity",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000010",
+    "title": "Complete an Online Lesson",
+    "description": "Finish one full lesson or module from an online course on a topic you're studying.",
+    "category": "productivity",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000011",
+    "title": "Digital Declutter Day",
+    "description": "Clean up your phone — delete unused apps, organize photos, and clear your downloads folder.",
+    "category": "productivity",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "d4e5f6a7-0004-4000-8000-000000000012",
+    "title": "Teach Something You Learned",
+    "description": "Explain a concept you recently learned to someone else — in person, video, or writing.",
+    "category": "productivity",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000001",
+    "title": "Order Something New at a Café",
+    "description": "Visit a café and order something you've never tried before. No default orders.",
+    "category": "challenge",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000002",
+    "title": "Take a Different Route",
+    "description": "Go to work, school, or an errand using a completely different route than usual.",
+    "category": "challenge",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000003",
+    "title": "No Social Media Until Noon",
+    "description": "Don't open any social media app or site until after 12:00 PM.",
+    "category": "challenge",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000004",
+    "title": "Eat with Your Non-Dominant Hand",
+    "description": "Use your non-dominant hand for an entire meal. Chopsticks earn bonus respect.",
+    "category": "challenge",
+    "difficulty": "easy",
+    "xp_reward": 10
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000005",
+    "title": "Say Yes to Something Unexpected",
+    "description": "The next reasonable invitation or opportunity that comes your way — say yes.",
+    "category": "challenge",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000006",
+    "title": "Start a Conversation with a Stranger",
+    "description": "Initiate a genuine conversation with someone you don't know in a public space.",
+    "category": "challenge",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000007",
+    "title": "No Complaints for 24 Hours",
+    "description": "Go a full day without complaining — out loud or in text. Catch yourself and rephrase.",
+    "category": "challenge",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000008",
+    "title": "Wake Up an Hour Earlier",
+    "description": "Set your alarm one hour earlier than usual and use the time intentionally.",
+    "category": "challenge",
+    "difficulty": "medium",
+    "xp_reward": 25
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000009",
+    "title": "Full Digital Detox Evening",
+    "description": "No screens after 7 PM. Read, walk, cook, or just sit with your thoughts until bed.",
+    "category": "challenge",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000010",
+    "title": "Do the Thing You've Been Avoiding",
+    "description": "Identify the one task you've been procrastinating and finish it today. No excuses.",
+    "category": "challenge",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000011",
+    "title": "24-Hour No-Spend Challenge",
+    "description": "Go a full 24 hours without spending any money at all. Plan ahead.",
+    "category": "challenge",
+    "difficulty": "hard",
+    "xp_reward": 50
+  },
+  {
+    "id": "e5f6a7b8-0005-4000-8000-000000000012",
+    "title": "Solo Adventure Day",
+    "description": "Spend an entire afternoon doing something fun alone — museum, hike, movie, or exploring a new neighborhood.",
+    "category": "challenge",
+    "difficulty": "hard",
+    "xp_reward": 50
+  }
+]
